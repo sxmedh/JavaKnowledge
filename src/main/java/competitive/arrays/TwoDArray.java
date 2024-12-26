@@ -13,7 +13,7 @@ public class TwoDArray {
         int[][] array2D = getNxMSizeArray(row, col);
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                array2D[i][j] = array[j * i + j];
+                array2D[i][j] = array[i*col + j];
             }
         }
         return array2D;
