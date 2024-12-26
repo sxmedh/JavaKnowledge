@@ -2,7 +2,7 @@ package competitive.arrays;
 
 import java.util.Random;
 
-public class twoDArray {
+public class TwoDArray {
 
     int[][] getNxMSizeArray(int row, int col) {
         return new int[row][col];
