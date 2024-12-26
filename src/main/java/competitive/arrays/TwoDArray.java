@@ -33,4 +33,20 @@ public class TwoDArray {
         int[] array = generateArrayWithRandomNumbers(row * col);
         return populate2DArray(array, row, col);
     }
+
+    void print2DArray(int[][] array, int row,int col) {
+        for (int i = 0;i < row;i++) {
+            for(int j = 0;j < col;j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    void printArray(int[] array, int n) {
+        for (int i = 0;i < n;i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
 }
