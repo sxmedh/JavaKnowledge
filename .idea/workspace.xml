@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c6e6f75-3b7b-4834-914d-e8132071e726" name="Changes" comment="" />
+    <list default="true" id="7c6e6f75-3b7b-4834-914d-e8132071e726" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Java Notes.pdf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,24 +25,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2qfjwzvM56xsCTl1lK6JDBaDqwL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.JavaKnowledge [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MyLambdaInterfaceSpec.createFibUsingLambda.executor&quot;: &quot;Run&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Notes/JavaKnowledge/src/test/resources&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Acer/IdeaProjects/JavaKnowledge/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.JavaKnowledge [:org.example.Main.main()].executor": "Run",
+    "Gradle.MyLambdaInterfaceSpec.createFibUsingLambda.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Notes/JavaKnowledge",
+    "onboarding.tips.debug.path": "C:/Users/Acer/IdeaProjects/JavaKnowledge/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Notes\JavaKnowledge\src\test\resources" />
@@ -100,6 +107,19 @@
       <option name="presentableId" value="Default" />
       <updated>1735060807734</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1735234542743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735234542743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
