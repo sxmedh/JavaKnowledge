@@ -26,4 +26,12 @@ public class ArrayQuestionSpec {
     void findMissingNumber() {
         assert (FindMissingNumberInArray.findMissingNumberInArray(new int[]{1, 2, 3, 4, 6}) == 5);
     }
+
+    @Test
+    void removeDuplicated() {
+        int[] array = {1, 1, 2, 2, 3, 4, 5};
+        int[] nonDuplicateArray = RemoveDuplicates.removeDuplicates(array);
+        assert(Arrays.equals(nonDuplicateArray, new int[]{1,2,3,4,5}));
+
+    }
 }
