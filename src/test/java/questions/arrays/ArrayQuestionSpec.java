@@ -32,6 +32,29 @@ public class ArrayQuestionSpec {
         int[] array = {1, 1, 2, 2, 3, 4, 5};
         int[] nonDuplicateArray = RemoveDuplicates.removeDuplicates(array);
         assert(Arrays.equals(nonDuplicateArray, new int[]{1,2,3,4,5}));
+    }
 
+    @Test
+    void removeDuplicateFromSorted() {
+        int[] array = new int[]{ 1, 1, 2 };
+        int size = RemoveDuplicatesFromSorted.removeDuplicates(array);
+        assert (size==2);
+    }
+
+    @Test
+    void bestTimeToBuyAndSell() {
+        int[] array = new int[]{7, 1, 5, 3, 6, 4};
+        BestTimeToBuyAndSell bst = new BestTimeToBuyAndSell();
+        int profit = bst.maxProfit(array);
+        int profit2 = bst.maxProfitInNComplexity(array);
+        assert (profit == 5);
+        assert (profit == profit2);
+    }
+
+    @Test
+    void twoSum() {
+        int[] array = new int[]{2,7,11,15};
+        TwoSum twoSum = new TwoSum();
+        assert (Arrays.equals(twoSum.twoSum(array,9),new int[]{0,1}));
     }
 }
