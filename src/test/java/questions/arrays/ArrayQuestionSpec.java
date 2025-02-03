@@ -57,4 +57,13 @@ public class ArrayQuestionSpec {
         TwoSum twoSum = new TwoSum();
         assert (Arrays.equals(twoSum.twoSum(array,9),new int[]{0,1}));
     }
+
+    @Test
+    void permutation() {
+        int[] array1 = {1,2,3,4,5};
+        int[] array2 = {5,4,3,2,1,0};
+        Permutation permutation = new Permutation();
+        assert (!permutation.permutation(array1, array2));
+    }
 }
+
