@@ -65,5 +65,21 @@ public class ArrayQuestionSpec {
         Permutation permutation = new Permutation();
         assert (!permutation.permutation(array1, array2));
     }
+
+    @Test
+    void rotateMatrix() {
+        int[][] array = new int[3][3];
+        int count = 1;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                array[i][j] = count;
+                count++;
+            }
+        }
+        RotateMatrixBy90 matrix = new RotateMatrixBy90();
+        int[][] rotated = matrix.rotateMatrix(array);
+        int[][] answer = {{7, 4, 1}, {8, 5, 2}, {9, 6, 3}};
+        assert (Arrays.deepEquals(answer, rotated));
+    }
 }
 
