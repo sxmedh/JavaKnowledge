@@ -1,0 +1,8 @@
+Instantiation and Management: The Spring IoC container creates and manages beans, handling their lifecycle and dependencies.
+baeldung.com
+
+Dependency Injection: Beans can have their dependencies injected by the container, promoting loose coupling and enhancing testability.
+baeldung.com
+
+Configuration: Beans can be defined using annotations like @Component, @Service, @Repository, or @Controller, or through Java configuration classes using the @Bean annotation.
+docs.spring.io
