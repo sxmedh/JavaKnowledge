@@ -4,7 +4,6 @@ import core.java.treenode.TreeNode;
 
 public class MinimumHeightOfBinaryTree {
 
-
     public int minDepth(TreeNode root) {
         if (root == null) {
             return 0;
@@ -20,4 +19,5 @@ public class MinimumHeightOfBinaryTree {
         }
         return 1 + Math.min(minDepth(root.left),minDepth(root.right));
     }
+
 }
