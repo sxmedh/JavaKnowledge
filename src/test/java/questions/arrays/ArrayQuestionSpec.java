@@ -81,5 +81,13 @@ public class ArrayQuestionSpec {
         int[][] answer = {{7, 4, 1}, {8, 5, 2}, {9, 6, 3}};
         assert (Arrays.deepEquals(answer, rotated));
     }
+
+    @Test
+    void singleNumber() {
+        int[] nums = {4, 1, 2, 1, 2};
+        SingleNumber singleNumber = new SingleNumber();
+        int answer = singleNumber.singleNumber(nums);
+        assert (answer == 4);
+    }
 }
 
