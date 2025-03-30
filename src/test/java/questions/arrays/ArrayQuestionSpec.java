@@ -1,8 +1,8 @@
 package questions.arrays;
-
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
+
+import static questions.arrays.NextGreaterPermutation.nextGreaterPermutation;
 
 public class ArrayQuestionSpec {
 
@@ -31,14 +31,14 @@ public class ArrayQuestionSpec {
     void removeDuplicated() {
         int[] array = {1, 1, 2, 2, 3, 4, 5};
         int[] nonDuplicateArray = RemoveDuplicates.removeDuplicates(array);
-        assert(Arrays.equals(nonDuplicateArray, new int[]{1,2,3,4,5}));
+        assert (Arrays.equals(nonDuplicateArray, new int[]{1, 2, 3, 4, 5}));
     }
 
     @Test
     void removeDuplicateFromSorted() {
-        int[] array = new int[]{ 1, 1, 2 };
+        int[] array = new int[]{1, 1, 2};
         int size = RemoveDuplicatesFromSorted.removeDuplicates(array);
-        assert (size==2);
+        assert (size == 2);
     }
 
     @Test
@@ -53,15 +53,15 @@ public class ArrayQuestionSpec {
 
     @Test
     void twoSum() {
-        int[] array = new int[]{2,7,11,15};
+        int[] array = new int[]{2, 7, 11, 15};
         TwoSum twoSum = new TwoSum();
-        assert (Arrays.equals(twoSum.twoSum(array,9),new int[]{0,1}));
+        assert (Arrays.equals(twoSum.twoSum(array, 9), new int[]{0, 1}));
     }
 
     @Test
     void permutation() {
-        int[] array1 = {1,2,3,4,5};
-        int[] array2 = {5,4,3,2,1,0};
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {5, 4, 3, 2, 1, 0};
         Permutation permutation = new Permutation();
         assert (!permutation.permutation(array1, array2));
     }
@@ -88,6 +88,12 @@ public class ArrayQuestionSpec {
         SingleNumber singleNumber = new SingleNumber();
         int answer = singleNumber.singleNumber(nums);
         assert (answer == 4);
+    }
+
+    @Test
+    void nextPermutation() {
+        int[] ans = nextGreaterPermutation(new int[]{2, 1, 5, 4, 3, 0, 0});
+        assert (Arrays.equals(ans, new int[]{2, 1, 5, 4, 3, 0, 0}));
     }
 }
 
