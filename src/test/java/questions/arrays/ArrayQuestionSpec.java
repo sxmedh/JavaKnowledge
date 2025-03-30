@@ -95,5 +95,11 @@ public class ArrayQuestionSpec {
         int[] ans = nextGreaterPermutation(new int[]{2, 1, 5, 4, 3, 0, 0});
         assert (Arrays.equals(ans, new int[]{2, 1, 5, 4, 3, 0, 0}));
     }
+
+    @Test
+    void maxSubArray() {
+        var kadane = new KadaneAlgo();
+        assert (6 == kadane.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
+    }
 }
 
