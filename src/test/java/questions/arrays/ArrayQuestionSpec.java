@@ -1,7 +1,10 @@
 package questions.arrays;
+
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
+import static questions.arrays.FindInversions.numberOfInversions;
 import static questions.arrays.NextGreaterPermutation.nextGreaterPermutation;
 
 public class ArrayQuestionSpec {
@@ -99,7 +102,37 @@ public class ArrayQuestionSpec {
     @Test
     void maxSubArray() {
         var kadane = new KadaneAlgo();
-        assert (6 == kadane.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
+        assert (6 == kadane.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
+    }
+
+    @Test
+    void mergeInterval() {
+        int[][] intervals = {
+                {2, 3},
+                {2, 2},
+                {3, 3},
+                {1, 3},
+                {5, 7},
+                {2, 2},
+                {4, 6}
+        };
+        var merge = new MergeInterval();
+        assert Arrays.deepEquals(merge.merge(intervals), new int[][]{{1, 3}, {4, 7}});
+    }
+
+    @Test
+    void findDuplicate() {
+        int[] dups = new int[]{1,3,4,2,2};
+        var findDups = new FindDuplicate();
+        assert(findDups.findDuplicate(dups)==2);
+    }
+
+    @Test
+    void findInversions() {
+        int[] a = {5, 4, 3, 2, 1};
+        int n = 5;
+        int cnt = numberOfInversions(a, n);
+        assert cnt == 10;
     }
 }
 
