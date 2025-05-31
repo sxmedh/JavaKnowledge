@@ -4,7 +4,7 @@ import java.util.*;
 
 public class GraphTraversal {
 
-    Map<Integer, List<Integer>> graph = new HashMap<>();
+    Map<Integer, List<Integer>> graph;
     List<Integer> visitedDfs = new ArrayList<>();
     List<Integer> visitedBfs = new ArrayList<>();
 
